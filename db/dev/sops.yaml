@@ -1,0 +1,5 @@
+creation_rules:
+  - gcp_kms: projects/my-project-kubernates-436201/locations/northamerica-northeast1/keyRings/my-key-ring
+    # Specify any file patterns you want to auto-encrypt
+    path_regex: '.*\.yaml$'
+    encrypted_regex: '^(secrets)$'
